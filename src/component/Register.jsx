@@ -128,7 +128,6 @@ class Register extends React.Component {
       );
       const [autoCompleteResult, setAutoCompleteResult] = useState([]);
 
-
       return (
         <Modal
           visible={visible}
@@ -200,6 +199,26 @@ class Register extends React.Component {
             >
               <Input />
             </Form.Item>
+            <Form.Item
+              name="DLNumber"
+              label={
+                <span>
+                  DLNumber
+                  <Tooltip title="Please input your Drug License number here">
+                    <QuestionCircleOutlined />
+                  </Tooltip>
+                </span>
+              }
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your DLNumber!",
+                  whitespace: true,
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
 
             <Form.Item
               name="email"
@@ -216,20 +235,6 @@ class Register extends React.Component {
               ]}
             >
               <Input />
-            </Form.Item>
-
-            <Form.Item
-              name="password"
-              label="Password"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your password!",
-                },
-              ]}
-              hasFeedback
-            >
-              <Input.Password />
             </Form.Item>
 
             <Form.Item
@@ -251,6 +256,40 @@ class Register extends React.Component {
               ]}
             >
               <Input />
+            </Form.Item>
+            <Form.Item
+              name="aadhar"
+              label={
+                <span>
+                  Aadhar Number
+                  <Tooltip title="Name of Your Store?">
+                    {/* <QuestionCircleOutlined /> */}
+                  </Tooltip>
+                </span>
+              }
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your aadhar number!",
+                  whitespace: false,
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+
+            <Form.Item
+              name="password"
+              label="Password"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your password!",
+                },
+              ]}
+              hasFeedback
+            >
+              <Input.Password />
             </Form.Item>
 
             <Form.Item
@@ -354,7 +393,7 @@ class Register extends React.Component {
 
             <Form.Item
               name="upload"
-              label="GSTIN certificate "
+              label="GSTIN & DL Certificate "
               rules={[
                 {
                   required: true,

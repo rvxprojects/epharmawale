@@ -37,7 +37,7 @@ const Home = () => {
               alt="Slide Two"
             />
             <Carousel.Caption>
-              <h3>Label for first slide</h3>
+              <h3>Label for second slide</h3>
               <p>Sample Text for Image Two</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -48,7 +48,7 @@ const Home = () => {
               alt="Slide Three"
             />
             <Carousel.Caption>
-              <h3>Label for second slide</h3>
+              <h3>Label for third slide</h3>
               <p>Sample Text for Image Three</p>
             </Carousel.Caption>
           </Carousel.Item>
